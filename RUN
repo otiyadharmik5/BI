@@ -1,0 +1,6 @@
+python src/cli.py market BTCUSDT BUY 0.01
+python src/cli.py limit BTCUSDT SELL 0.01 --price 30000
+python src/cli.py stoplimit BTCUSDT SELL 0.01 --stop_price 31000 --limit_price 30900
+python src/cli.py oco BTCUSDT BUY 0.01 --tp 32000 --sl 28000
+python src/cli.py twap BTCUSDT BUY 0.05 --slices 5 --interval 1
+python src/cli.py grid BTCUSDT BUY --lower 25000 --upper 27000 --steps 4 --quantity 0.01
